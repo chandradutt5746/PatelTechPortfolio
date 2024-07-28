@@ -189,6 +189,6 @@ function About() {
             </Section>
         </RootContainer>
     );
-}
+} 
 
 export default About;
