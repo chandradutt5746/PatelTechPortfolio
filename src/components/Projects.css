@@ -1,0 +1,40 @@
+.projects-container {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.project-card {
+    transition: transform 1.2s ease-in-out;
+}
+
+.project-card:hover {
+    transform: scale(1.02);
+}
+
+.project-image {
+    width: 100%;
+    height: 140px;
+    object-fit: cover;
+    border-bottom: 1px solid #ddd;
+}
+
+.project-title {
+    font-weight: bold;
+    color: #0073e6;
+}
+
+.project-description {
+    color: #555;
+}
+
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 8px;
+}
+
+.skill-chip {
+    margin: 4px;
+    background-color: #0073e6;
+    color: white;
+}
