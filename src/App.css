@@ -5,43 +5,46 @@
 }
 
 /* Navigation Bar Styles */
-.navbar {
-  background: linear-gradient(to right, #6a11cb, #2575fc);
-  padding: 1rem 2rem;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  position: sticky;
-  top: 0;
-  z-index: 1000;
+nav {
+  margin-bottom: 20px;
+}
+
+.drawer :hover{
+  background-color: #ffffff;
+  transform: scale(1.03);
 }
 
 .nav-links {
   list-style: none;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0;
   padding: 0;
+  display: flex;
+  justify-content: space-around;
 }
 
 .nav-links li {
-  margin: 0 1.5rem;
+  display: inline;
+  margin: 0 10px;
 }
 
 .nav-links a {
-  color: white;
   text-decoration: none;
-  font-size: 1.1rem;
-  padding: 0.5rem 1rem;
-  border-radius: 25px;
-  transition: all 0.3s ease;
+  color: white;
+  font-size: 18px;
+  transition: color 0.3s;
 }
 
 .nav-links a:hover {
-  background-color: rgba(255, 255, 255, 0.2);
-  color: #fff;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  color: #000000;
 }
 
+.MuiToolbar-root {
+  justify-content: space-between;
+}
+
+.MuiButton-root {
+  text-transform: none;
+  font-size: 16px;
+}
 /* Header Styles */
 .App-header {
   background-color: #282c34;
@@ -51,7 +54,7 @@
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: rgb(255, 255, 255);
 }
 
 .App-link {

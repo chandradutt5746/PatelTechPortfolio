@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { Link as RouterLink } from 'react-router-dom';
-import { Container, Typography, Card, CardContent, CardActionArea, Grid, CardActions, Chip } from '@mui/material';
+import { Container, Typography, Card, CardContent, CardActionArea, Grid, CardActions, Chip, useMediaQuery } from '@mui/material';
+import { useTheme } from '@mui/material/styles';
 import './Projects.css'; // Import the CSS file
 
 
@@ -15,6 +16,8 @@ const truncateText = (text, limit) => {
 
 function Projects() {
     const [projects, setProjects] = useState([]);
+    const theme = useTheme();
+    const isMobile = useMediaQuery(theme.breakpoints.down('sm'));
     const [error, setError] = useState(null);
 
     useEffect(() => {
@@ -47,6 +50,7 @@ function Projects() {
                                     src={project.image}  
                                     alt={project.title}
                                     className="project-image"
+                                    style={{ height: isMobile ? '150px' : '200px' }}
                                 />
                                 <CardContent>
                                     <Typography variant="h6" component="h3" className="project-title" gutterBottom>

@@ -38,3 +38,19 @@
     background-color: #0073e6;
     color: white;
 }
+
+@media (max-width: 768px) {
+    .project-image {
+        height: 150px;
+    }
+}
+
+@media (max-width: 576px) {
+    .projects-container {
+        padding: 0 10px;
+    }
+
+    .project-image {
+        height: 100px;
+    }
+}

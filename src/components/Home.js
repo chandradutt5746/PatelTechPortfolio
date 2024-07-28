@@ -2,7 +2,6 @@ import React from 'react';
 import { Typography, Container, Grid, Button } from '@mui/material';
 import { Link } from 'react-router-dom';
 import './Home.css';
-import Profileimg from '../img/20230216_145656_resized.jpg';
 import backvid from '../img/backvid.mov'
 
 function Home() {
@@ -13,8 +12,8 @@ function Home() {
             Your browser does not support the video tag.
         </video>
         <Container>
-                <Grid container spacing={4} alignItems="center" className='content'>
-                <Grid item xs={12} md={6}>
+            <Grid container spacing={4} alignItems="center" className='content'>
+                <Grid item xs={12} md={20} alignItems="center">
                     <Typography variant="h3" component="h1" gutterBottom>
                         Welcome to PatelTechPortfolio
                     </Typography>
@@ -25,10 +24,11 @@ function Home() {
                         View Projects
                     </Button>
                 </Grid>
-                <Grid item xs={12} md={6}>
-                    {/* Add an image or illustration */}
+                {/* <Grid item xs={12} md={6}>
+                    Add an image or illustration
                     <img src={Profileimg} alt="Tech" style={{ width: '60%', borderRadius: '8px' }} />
                 </Grid>
+                 */}
             </Grid>
         </Container>
         </div>
